@@ -134,10 +134,6 @@
             <goals>
               <goal>jar</goal>
             </goals>
-            <configuration>
-              <additionalOptions>-Xdoclint:none</additionalOptions>
-              <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
-            </configuration>
           </execution>
         </executions>
       </plugin>
@@ -146,7 +142,7 @@
         <artifactId>maven-gpg-plugin</artifactId>
 		<configuration>
 			<!-- Set skip to true, if running "mvn install" in an environment where gpg keys are not available -->
-			<skip>false</skip>
+			<skip>true</skip>
 		</configuration>
         <version>1.6</version>
         <executions>
